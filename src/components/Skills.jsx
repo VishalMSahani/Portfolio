@@ -54,7 +54,7 @@ function Skills() {
   return (
     <section className="w-full flex justify-center items-center py-12 lg:py-16 xl:py-20">
     <div className="container px-4 grid max-w-3xl items-center justify-center space-y-6 text-center md:gap-10 md:px-6 md:text-left lg:grid-cols-3 lg:gap-8 lg:max-w-5xl xl:gap-10">
-      <div className="space-y-3 lg:col-span-2">
+      <div className="space-y-3 lg:col-span-3">
         <div className="space-y-2">
           <h2 className="text-3xl font-semibold tracking-tighter sm:text-4xl md:text-5xl">Technical 
           <span className='text-Purple' > Skills</span></h2>
@@ -69,11 +69,13 @@ function Skills() {
            {
             skills.map((skill, index)=>{
               return(
-                <div className='py-1 border border-NavyBlue border-opacity-15
+                <div className=' hover:bg-Pink transition-all duration-300 hover:text-white
+                py-1 border border-NavyBlue border-opacity-15
                  shadow-sm flex items-center rounded gap-2'
                  key={index}>
-                  
-                  <img src={skill.logo} alt={skill.name} width={50}  />
+
+                  <img className='hover:scale-105 transition-all duration-200'
+                  src={skill.logo} alt={skill.name} width={50}  />
                   <h3 className=" font-semibold tracking-wide">{skill.name}</h3>
                 </div>
               )
