@@ -76,7 +76,7 @@ function Skills() {
 
                   <img className='hover:scale-105 transition-all duration-200'
                   src={skill.logo} alt={skill.name} width={50}  />
-                  <h3 className=" font-semibold tracking-wide">{skill.name}</h3>
+                  <h3 className=" font-semibold tracking-wide mr-2">{skill.name}</h3>
                 </div>
               )
             })

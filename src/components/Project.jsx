@@ -8,7 +8,7 @@ import { FaCode } from "react-icons/fa6";
 
 function Project() {
   return (
-    <section className="w-full py-12 lg:py-16 xl:py-24">
+    <section className="w-full flex py-12 lg:py-16 xl:justify-center">
       <div className="container px-4 grid items-center justify-center text-center md:px-6">
         <div className="space-y-3">
           <h2 className="text-3xl font-semibold tracking-tighter sm:text-4xl md:text-5xl">Featured 
@@ -19,14 +19,14 @@ function Project() {
           </p>
         </div>
         <div className="">
-          <div className="flex lg:flex-wrap justify-center
+          <div className="flex lg:flex-wrap justify-center flex-wrap
            gap-8 lg:flex-row ml-3 mr-3 sm:flex-col flex-col">
             {
               projects.map((project , index) => (
                 <div className='lg:w-[400px] md:w-[90%] border border-NavyBlue border-opacity-20
                  rounded-md mt-6 shadow-sm'
                 key={index}>
-                  <img width={400} height={250} className='rounded-md shadow-md'
+                  <img width={500} height={250} className='rounded-md shadow-md'
                    src={project.img} alt={project.title} />
                   <h3 className="text-xl m-3
                   font-semibold tracking-tight">{project.title}</h3>
