@@ -1,23 +1,41 @@
 import './App.css';
-import About from './components/About';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Skills from './components/Skills';
-import SocialMedia from './components/SocialMedia';
 import Project from './components/Project';
 import Footer from './components/Footer';
+import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Extra from './components/pages/Extra';
+import Graphic from './components/pages/Graphic';
 
 function App() {
+
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <div>
-      <Navbar />
-      <About />
-      <Home/>
-      <Project/>
-      <Skills />
-      <SocialMedia />
+    <div className={isDarkMode ? 'dark' : 'light'}>
+      <div className='dark:bg-richblack-900' >
+      <Navbar toogleDark={toggleDarkMode} isDarkMode={isDarkMode} />
+      
+    <Routes>
+      <Route path='/' element={
+        <div>
+          <Home />
+          <Project />
+          <Skills /> 
+          <Graphic/>   
+        </div>
+       } />
+      <Route path='coming-soon' element={<Extra/>} ></Route>
+    </Routes>
       <Footer/>
 
+    </div>
     </div>
   );
 }
