@@ -46,6 +46,9 @@ function Project() {
                   {project.technologies[2]}</span>
                  
                  </div>
+                 <div className=''>
+                  <p className='mt-2 bg-Red mx-4 rounded-md'>{project?.type}</p>
+                 </div>
             
                   <div className='flex justify-center items-center m-4 mt-7 gap-5'>
                     {

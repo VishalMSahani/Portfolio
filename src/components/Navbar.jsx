@@ -16,6 +16,7 @@ function Navbar({toogleDark , isDarkMode}) {
   const tabs= [
     {
       "title": "Home",
+      "path" : "/"
       
     },
     {
@@ -67,7 +68,9 @@ function Navbar({toogleDark , isDarkMode}) {
                   className={`${currentTab === item.title ? "text-Purple dark:text-Pink ":null} lg:mb-0 mb-5  `}
                   onClick={()=> setCurrenttab(item.title)}>
                    
+                      <Link to={item?.path}>
                       <p>{item.title}</p>
+                      </Link>
                    
                   </ul>
              )

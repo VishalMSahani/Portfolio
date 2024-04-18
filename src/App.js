@@ -8,7 +8,7 @@ import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Extra from './components/pages/Extra';
 import Graphic from './components/pages/Graphic';
-import Contact from './components/pages/Contact';
+import EdTech from './components/pages/EdTech';
 
 function App() {
 
@@ -30,10 +30,11 @@ function App() {
           <Project />
           <Skills /> 
           <Graphic/>   
-          <Contact/>   
+             
         </div>
        } />
       <Route path='coming-soon' element={<Extra/>} ></Route>
+      <Route path='project/edtech' element={<EdTech/>} ></Route>
     </Routes>
       <Footer/>
 
