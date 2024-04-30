@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import htmllogo from '../assets/skill/html.svg'
 import js from '../assets/skill/js.svg'
 import Reactlogo from '../assets/skill/React.svg'
@@ -8,6 +8,8 @@ import python from '../assets/skill/python.svg'
 import mongo from '../assets/skill/mongo.svg'
 import express from '../assets/skill/express.svg'
 import git from '../assets/skill/git.svg'
+import { tabs } from './Navbar'
+
 
   const skills =  [
     {
@@ -51,11 +53,29 @@ import git from '../assets/skill/git.svg'
 
 
 function Skills() {
+
+  const skillRef = useRef(null);
+
+  const scrollToSection = (sectionId) => {
+    const sectionRef = {
+      "skill" : skillRef
+    };
+
+    const selectedRef = sectionRef[sectionId];
+    if(selectedRef && selectedRef.current) {
+      selectedRef.current.scrollIntoView({behavior:"smooth"});
+    }
+
+  };
+
+
+
   return (
-    <section className="w-full flex justify-center items-center py-12 lg:py-16 xl:py-20">
+    <section scrollToSection={scrollToSection} ref={skillRef}
+     id='skills' className="w-full flex justify-center items-center py-12 lg:py-16 xl:py-20">
     <div className="container px-4 grid max-w-3xl items-center justify-center space-y-6 text-center md:gap-10 md:px-6 md:text-left lg:grid-cols-3 lg:gap-8 lg:max-w-5xl xl:gap-10">
       <div className="space-y-3 lg:col-span-3">
-        <div className="space-y-2">
+        <div ref={skillRef} className="space-y-2">
           <h2 className="text-3xl dark:text-white font-semibold tracking-tighter sm:text-4xl md:text-5xl">Technical 
           <span className='text-Purple' > Skills</span></h2>
           <p className="text-NavyBlue text-opacity-60 dark:text-white

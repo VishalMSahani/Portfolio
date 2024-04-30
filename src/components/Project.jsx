@@ -8,7 +8,7 @@ import { FaCode } from "react-icons/fa6";
 
 function Project() {
   return (
-    <section className="w-full flex py-12 lg:py-16 xl:justify-center dark:text-white  ">
+    <section id='project' className="w-full flex py-12 lg:py-16 xl:justify-center dark:text-white transition-all">
       <div className="container px-4 grid items-center justify-center text-center md:px-6 rounded-3xl">
         <div className="space-y-3 ">
           <h2 className="text-3xl font-semibold tracking-tighter sm:text-4xl md:text-5xl">Featured 

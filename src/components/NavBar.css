@@ -1,0 +1,40 @@
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 75%; /* Adjust sidebar width as needed */
+    max-width: 300px; /* Adjust max-width for responsiveness */
+    background-color: #4a5568; /* Sidebar background color */
+    color: white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 50;
+    padding-left: 20px;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  /* Overlay styles */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 40; /* Ensure overlay is below sidebar */
+  }
+  
+  /* Button styles */
+  .toggle-button {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: white;
+    z-index: 60; /* Ensure button is above overlay */
+  }
+  
