@@ -8,6 +8,13 @@ import python from '../assets/skill/python.svg'
 import mongo from '../assets/skill/mongo.svg'
 import express from '../assets/skill/express.svg'
 import git from '../assets/skill/git.svg'
+import node from '../assets/skill/Node.svg'
+import github from '../assets/skill/github.svg'
+import npm from '../assets/skill/npm.svg'
+import nextjs from '../assets/skill/nextjs.svg'
+import postman from '../assets/skill/postman.svg'
+import ts from '../assets/skill/typescript.svg'
+import redux from '../assets/skill/redux.svg'
 import { tabs } from './Navbar'
 
 
@@ -25,12 +32,24 @@ import { tabs } from './Navbar'
       "logo": js
     },
     {
-      "name": "React",
+      "name": "React JS",
       "logo": Reactlogo
     },
     {
-      "name": "Express Js",
+      "name": "Next JS",
+      "logo": nextjs
+    },
+    {
+      "name": "Express JS",
       "logo": express
+    },
+    {
+      "name": "Node JS",
+      "logo": node
+    },
+    {
+      "name": "TypeScript",
+      "logo": ts
     },
     {
       "name": "Taiwind CSS",
@@ -41,12 +60,28 @@ import { tabs } from './Navbar'
       "logo": mongo
     },
     {
+      "name": "Git",
+      "logo": git
+    },
+    {
+      "name": "GitHub",
+      "logo": github
+    },
+    {
       "name": "Python",
       "logo": python
     },
     {
-      "name": "Git & GitHub",
-      "logo": git
+      "name": "Redux",
+      "logo": redux
+    },
+    {
+      "name": "NPM",
+      "logo": npm
+    },
+    {
+      "name": "Postman",
+      "logo": postman
     },
   ]
 
