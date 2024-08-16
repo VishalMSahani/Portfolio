@@ -10,7 +10,7 @@ function Graphic() {
      flex flex-col justify-center items-center mt-4 z-10  '>
     <div className='z-20 flex lg:flex-row max-md:flex-col justify-center items-center gap-5 mt-8 mb-12'>
         <div className="space-y-1 max-sm:flex max-sm:flex-col max-sm:items-center">
-          <h2 className="text-3xl text-Pink  font-semibold tracking-tighter sm:text-4xl md:text-5xl">Gaphic Design 
+          <h2 className="text-3xl text-Pink  font-semibold tracking-tighter sm:text-4xl md:text-5xl">Graphic Design 
           <span className='dark:text-white text-black' > Portfolio</span></h2>
           <p className="text-NavyBlue text-opacity-60 dark:text-richblack-5 w-[490px] max-sm:text-center
            text dark:text-gray-400 max-sm:w-[80%] ">
